@@ -9,7 +9,6 @@ let numero4 = [2, -34, 24, 76, -9, 67, 32, -78, 4, 32];
 
 
 
-
 // 1 Muestre un "¡Hola Mundo!"
 console.log("¡Hola Mundo!");
 
@@ -73,3 +72,12 @@ console.log( nombre2.length )
 // 10001 Lea una cantidad arbitraria de nombres y devuelva la suma de todos sus carácteres
 let contarNom = nombre2.join() //aqui cramos una variable y después la llamamos
 console.log(contarNom.length)
+
+//10010 Lea 10 numeros en consola y devuelva el tercero mayor.
+numero4.sort(function(a, b) {return b-a});
+let higherThird = numero4[2];
+console.log(higherThird)
+
+// Bonus track: ¡Invente su propio "Elige tu propia aventura" por consola! En la consola se irá narrado una historia, en función de lo que el usuario vaya escogiendo, el desenlace será uno u otro. Deberá evitarse errores por mal uso de la consola. Debe capturarse la mayor cantidad posible de errores, indicando al usuario cómo proceder para evitarlos.
+
+let historia = [prompt("ingrese su nombre")]
